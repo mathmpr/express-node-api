@@ -1,10 +1,10 @@
-#Requirements 
+# Requirements 
 
 - Node JS >= 15.0.0 (download node from https://nodejs.org/pt-br/download/)
 
-#Getting start
+# Getting start
 
-##Install
+## Install
 
 With Node JS installed, follow these steps:
 
