@@ -76,3 +76,6 @@ typings/
 .fusebox/
 
 .idea
+
+/.year.lock
+/.package-lock.json
