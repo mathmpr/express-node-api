@@ -3,6 +3,7 @@ global._require = (module_name) => {
     return require(__dirname + '/' + module_name);
 }
 
+let cors = require('cors')
 let express = require('express');
 let {graphqlHTTP} = require('express-graphql');
 let {GraphQLSchema} = require('graphql');
@@ -17,6 +18,8 @@ let schema = new GraphQLSchema({
 });
 
 let app = express();
+
+app.use(cors());
 
 // middleware for logs
 app.use(function (req, res, next) {

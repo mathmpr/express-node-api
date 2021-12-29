@@ -14,6 +14,12 @@ module.exports = {
             return_type: GraphQLJSON
         },
         {
+            path: 'persons/find',
+            method: 'find',
+            controller: persons,
+            return_type: GraphQLJSON
+        },
+        {
             path: 'persons/add',
             method: 'add',
             controller: persons,

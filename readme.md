@@ -14,7 +14,7 @@ With Node JS installed, follow these steps:
 
 ## Start
 
-- Run `npm start` to run Express + GraphQL server at port 4000;
+- Run `yarn start` to run Express + GraphQL server at port 4000;
 - Access `http://localhost:4000/graphql` and check an GraphQL client; 
 - Possible queries is disponible in right side of window.
 
@@ -57,7 +57,7 @@ In this project, I tried to implement something use both ways in the `routes.js`
 
 ## Extra & experimental
 
-- Experimental query call to `add` using route parsed
+- Experimental query call for `add` using route parsed  (just call, not really work)
 ```
 {
     persons {
@@ -66,11 +66,20 @@ In this project, I tried to implement something use both ways in the `routes.js`
 }
 ```
 
-- Experimental query call to `remove` person like a pure GraphQL
+- Experimental query call for `remove` person like a pure GraphQL (just call, not really work)
 ```
 {
     persons {
-        remove(id: 2)
+        remove(id: "5f1d7f3e5dc58af42fc39242")
+    }    
+}
+```
+
+- Experimental query call for `find` using route parsed (working)
+```
+{
+    persons {
+        find(id: "5f1d7f3e5dc58af42fc39242")
     }    
 }
 ```
